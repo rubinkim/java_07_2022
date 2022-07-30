@@ -18,14 +18,12 @@ public class Page_52_73 {
 		double USDAmount = 600.50;      // 8bytes 실수타입
 		String name = "Amy"; // 참조타입(메모리의 위치를 저장하는 타입)
 		
-		System.out.println(age);
-		System.out.println(point);
-		System.out.println(price);
-		System.out.println(totalSales);
-		System.out.println(isMarried);
-		System.out.println(gender);
-		System.out.println(PI);
-		System.out.println(USDAmount);
+		
+		System.out.println(age); System.out.println(point);
+		System.out.println(price); System.out.println(totalSales);
+		System.out.println(isMarried); System.out.println(gender);
+		System.out.println(PI); System.out.println(USDAmount);
 		System.out.println(name);
+		 
 	}
 }
