@@ -10,7 +10,7 @@ public class Member {
 	}
 	
 	public void setName(String name) {
-		name = name;
+		this.name = name;
 	}
 	
 	public String getName() {
@@ -22,6 +22,7 @@ public class Member {
 		
 		Member person1 = new Member();
 		person1.setName("Rubin Kim");
+		System.out.println(person1.name);
 		System.out.println(person1.getName());
 	}
 
