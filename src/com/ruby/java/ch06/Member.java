@@ -6,24 +6,30 @@ public class Member {
 	private int age;
 	
 	public Member() {
-		System.out.println("Member() 생성자 실행");
+		this("Rubin");
 	}
 	
-	public void setName(String name) {
+	public Member(String name) {
+		this(name, 0);
+	}
+	
+	public Member(String name, int age) {
 		this.name = name;
+		this.age = age;
 	}
 	
-	public String getName() {
-		return name;
+	public String toString() {
+		return name + " : " + age;
 	}
-
+	
 	public static void main(String[] args) {
-		System.out.println("main() 메서드 실행");
+		Member m1 = new Member();
+		Member m2 = new Member("Kiwon");
+		Member m3 = new Member("Jiyoung", 23);
 		
-		Member person1 = new Member();
-		person1.setName("Rubin Kim");
-		System.out.println(person1.name);
-		System.out.println(person1.getName());
+		System.out.println(m1.toString());
+		System.out.println(m2.toString());
+		System.out.println(m3.toString());
 	}
 
 }
