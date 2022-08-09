@@ -8,6 +8,13 @@ public class Student extends Person {
 		System.out.println("Student 생성자 실행");
 	}
 	
+//	생성자 오버로딩
+	public Student(String name, int age, String major) {
+		super(name, age);
+		this.major = major;
+		System.out.println("Student(name, age, major) 생성자 실행");
+	}
+	
 	public String getMajor() {
 		return major;
 	}

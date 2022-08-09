@@ -9,6 +9,12 @@ public class Person {
 		System.out.println("Person 생성자 실행");
 	}
 	
+//	생성자 오버로딩
+	public Person(String name, int age) {
+		this.name = name;
+		this.age = age;
+	}
+	
 	public String getName() {
 		return name;
 	}

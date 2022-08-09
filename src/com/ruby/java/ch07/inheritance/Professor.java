@@ -8,6 +8,13 @@ public class Professor extends Person {
 		System.out.println("Professor 생성자 실행");
 	}
 	
+//	생성자 오버로딩
+	public Professor(String name, int age, String subject) {
+		super(name, age);
+		this.subject = subject;
+		System.out.println("Professor(name, age, subject) 생성자 실행!");
+	}
+	
 	public String getSubject() {
 		return subject;
 	}
