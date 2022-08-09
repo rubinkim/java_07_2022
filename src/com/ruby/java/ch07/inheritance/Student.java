@@ -11,6 +11,7 @@ public class Student extends Person {
 	}
 	public String toString() {
 //		this.getName()과 this.getAge()를 사용해도 좋다
-		return getName() + " : " + getAge() + " : " + major;
+//		overriding할 때 super를 이용해서 Person클래스의 toString()메서드에 접근하기
+		return super.toString() + " : " + major;
 	}
 }

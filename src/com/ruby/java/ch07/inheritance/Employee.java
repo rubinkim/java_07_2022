@@ -10,6 +10,6 @@ public class Employee extends Person {
 		this.dept = dept;
 	}
 	public String toString() {
-		return getName() + " : " + getAge() + " : " + dept;
+		return super.toString() + " : " + dept;
 	}
 }

@@ -10,6 +10,6 @@ public class Professor extends Person {
 		this.subject = subject;
 	}
 	public String toString() {
-		return getName() + " : " + getAge() + " : " + subject;
+		return super.toString() + " : " + subject;
 	}
 }
