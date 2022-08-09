@@ -9,4 +9,7 @@ public class Professor extends Person {
 	public void setSubject(String subject) {
 		this.subject = subject;
 	}
+	public String toString() {
+		return getName() + " : " + getAge() + " : " + subject;
+	}
 }
