@@ -4,6 +4,11 @@ public class Person {
 	private String name;
 	private int age;
 	
+//	기본 생성자 추가
+	public Person() {
+		System.out.println("Person 생성자 실행");
+	}
+	
 	public String getName() {
 		return name;
 	}

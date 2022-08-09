@@ -3,6 +3,11 @@ package com.ruby.java.ch07.inheritance;
 public class Student extends Person {
 	private String major;
 	
+//	기본 생성자 추가
+	public Student() {
+		System.out.println("Student 생성자 실행");
+	}
+	
 	public String getMajor() {
 		return major;
 	}
