@@ -11,5 +11,4 @@ public class LMSTest2 {
 		System.out.println(p.toString());
 		System.out.println(s.toString());
 	}
-
 }
