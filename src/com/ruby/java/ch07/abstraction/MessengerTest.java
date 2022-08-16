@@ -9,10 +9,14 @@ public class MessengerTest {
 		
 		System.out.println("메신저 최소 문자 크기" + Messenger.MIN_SIZE);
 		System.out.println("메신저 최대 문자 크기" + Messenger.MAX_SIZE);
+		System.out.println();
 		
 		iphone.getMessage();
 		iphone.setMessage("hello");
 		iphone.clearMessage();
+		iphone.draw_textBox();
+		iphone.draw_submitButton();
+		System.out.println();
 		
 		galaxy.getMessage();
 		galaxy.setMessage("hi");
