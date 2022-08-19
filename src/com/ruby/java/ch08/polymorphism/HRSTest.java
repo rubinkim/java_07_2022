@@ -61,12 +61,14 @@ public class HRSTest {
 		
 		System.out.println();
 		
+		// toString()메서드는 "클래스이름@인스턴스ID값을 반환합니다.
 		System.out.println(s.toString());
 		System.out.println(c.toString());
 		System.out.println(d.toString());
 		
 		System.out.println();
 		
+		// 객체.equals(다른 객체)메서드는 양객체가 같은 객체인지 아닌지 bool을 반환합니다.
 		if(s.equals(c)) {
 			System.out.println("s와 c는 동일한 객체입니다");
 		}
