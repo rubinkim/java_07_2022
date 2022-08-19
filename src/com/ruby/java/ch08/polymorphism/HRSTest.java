@@ -58,5 +58,32 @@ public class HRSTest {
 		calcTax(s);
 		calcTax(c);
 		calcTax(d);
+		
+		System.out.println();
+		
+		System.out.println(s.toString());
+		System.out.println(c.toString());
+		System.out.println(d.toString());
+		
+		System.out.println();
+		
+		if(s.equals(c)) {
+			System.out.println("s와 c는 동일한 객체입니다");
+		}
+		else {
+			System.out.println("s와 c는 서로 다른 객체입니다.");
+		}
+		
+		System.out.println();
+		
+		Salesman s2 = s;
+		System.out.println(s2.toString());
+		
+		if(s.equals(s2)) {
+			System.out.println("s와 s2는 동일한 객체입니다.");
+		}
+		else {
+			System.out.println("s와 s2는 서로 다른 객체입니다.");
+		}
 	}
 }
