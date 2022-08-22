@@ -17,9 +17,12 @@ class Salesman extends Employee{
 	}
 }
 
-abstract class Manager extends Employee{
+class Manager extends Employee{
 	public void calcSalary() {
 		System.out.println("Manager 급여 = 기본급 + 팀 성과 수당");
+	}
+	public void calcBonus() {
+		System.out.println("Manage 보너스 = 기본급 * 12 * 6");
 	}
 }
 
@@ -45,6 +48,7 @@ public class HRSTest {
 	}
 
 	public static void main(String[] args) {
+		
 		Salesman s = new Salesman();
 		Consultant c = new Consultant();
 		Director d = new Director();
@@ -86,6 +90,28 @@ public class HRSTest {
 		}
 		else {
 			System.out.println("s와 s2는 서로 다른 객체입니다.");
+		}
+		
+		Salesman ss1 = new Salesman();
+		Employee ss2 = new Salesman();
+		Object ss3 = new Salesman();
+		
+		Object m1 = new Manager();
+		Employee m2 = new Manager();
+		Manager m3 = new Manager();
+		
+		Object arr[] = new Object[6];
+		arr[0] = ss1;
+		arr[1] = ss2;
+		arr[2] = ss3;
+		arr[3] = m1;
+		arr[4] = m2;
+		arr[5] = m3;
+		
+		System.out.printf("\n\n");
+		
+		for(int i=0; i<arr.length; i++) {
+			System.out.println(arr[i]);
 		}
 	}
 }
