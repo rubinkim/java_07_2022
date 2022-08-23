@@ -9,6 +9,9 @@ abstract class Employee{
 }
 
 class Salesman extends Employee{
+	
+	int annual_sales; // 연간 판매 실적
+	
 	public void calcSalary() {
 		System.out.println("Salesman 급여 = 기본급 + 판매 수당");
 	}
@@ -18,6 +21,9 @@ class Salesman extends Employee{
 }
 
 class Manager extends Employee{
+	
+	int num_team; // 관리 팀 수
+	
 	public void calcSalary() {
 		System.out.println("Manager 급여 = 기본급 + 팀 성과 수당");
 	}
@@ -27,6 +33,9 @@ class Manager extends Employee{
 }
 
 class Consultant extends Employee{
+	
+	int num_project; // 컨설팅 참여 수
+	
 	public void calcSalary() {
 		System.out.println("Consultant 급여 = 기본급 + 컨설팅 특별 수당");
 	}
