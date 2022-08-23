@@ -7,7 +7,9 @@ public class MyLinkedListTest {
 		myList.print();
 		
 		myList.add("JAVA");
+		myList.print();
 		myList.add("JSP");
+		myList.print();
 		myList.add("Servelet");
 		myList.print();
 	}
