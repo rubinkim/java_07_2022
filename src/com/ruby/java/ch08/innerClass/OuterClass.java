@@ -22,4 +22,17 @@ public class OuterClass {
 			System.out.println("Static Class : " + c);
 		}
 	}
+	
+	public void method1() {
+		class LocalClass{
+			int d;
+			void method5() {
+				System.out.println("LocalClass : " + d);
+			}
+		}
+		
+		LocalClass inner = new LocalClass();
+		inner.d = 1004;
+		inner.method5();
+	}
 }

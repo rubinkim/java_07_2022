@@ -14,5 +14,7 @@ public class OuterClassTest {
 		
 		OuterClass.StaticClass.c = 789;
 		OuterClass.StaticClass.method4();
+		
+		outer.method1();
 	}
 }
