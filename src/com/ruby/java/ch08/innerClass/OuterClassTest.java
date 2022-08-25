@@ -7,5 +7,12 @@ public class OuterClassTest {
 		OuterClass.InstanceClass inner01 = outer.new InstanceClass();
 		inner01.a = 123;
 		inner01.method2();
+		
+		OuterClass.StaticClass inner02 = new OuterClass.StaticClass();
+		inner02.b = 456;
+		inner02.method3();
+		
+		OuterClass.StaticClass.c = 789;
+		OuterClass.StaticClass.method4();
 	}
 }
