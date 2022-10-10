@@ -3,7 +3,7 @@ package com.ruby.java.test2;
 public class ThisTest2 {
 	
 	private String name;
-	private int age = 0;
+	private int age;
 	
 	public ThisTest2() {
 		this("±èÇÑ¿ë");		
