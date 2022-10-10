@@ -23,8 +23,8 @@ public class ThisTest2 {
 		ThisTest2 tt2 = new ThisTest2("천지영");
 		ThisTest2 tt3 = new ThisTest2("김기원", 47);
 		
-		System.out.println("tt1의 name : " + tt1.name);
-		System.out.println("tt2의 name : " + tt2.name);
+		System.out.println("tt1의 name : " + tt1.name + "   tt1의 age : " + tt1.age);
+		System.out.println("tt2의 name : " + tt2.name + "   tt2의 age : " + tt2.age);
 	}
 
 }
