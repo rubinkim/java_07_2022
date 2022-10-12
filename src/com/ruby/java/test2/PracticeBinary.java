@@ -6,9 +6,10 @@ public class PracticeBinary {
 		byte a = 25;
 		byte b = 19;
 		
-		byte c = (a+b);
+		byte c = (byte)(a+b);
 		
 		System.out.println(c);
+		System.out.println(Integer.toBinaryString(c));
 	}
 
 }
