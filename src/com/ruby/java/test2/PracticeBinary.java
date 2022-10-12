@@ -11,5 +11,4 @@ public class PracticeBinary {
 		System.out.println(c);
 		System.out.println(Integer.toBinaryString(c));
 	}
-
 }
