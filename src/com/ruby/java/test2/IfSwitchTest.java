@@ -28,10 +28,21 @@ public class IfSwitchTest {
 		char grade2;
 		
 		switch(score2) {
-		case 90: grade2 = 'A';
-		case 83: grade2 = 'B';
-		case 75: grade2 = 'C';
-		default: grade2 = 'F';
+		case 90 : {
+			grade2 = 'A';
+			break;
+		}
+		case 83: {
+			grade2 = 'B';
+			break;
+		}
+		case 75: {
+			grade2 = 'C';
+			break;
+		}
+		default:{
+			grade2 = 'F';			
+		}
 		}
 		
 		System.out.println("SWITCH문으로 실행한 grade는 " + grade2 + "이다.");
