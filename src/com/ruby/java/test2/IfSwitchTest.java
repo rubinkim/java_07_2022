@@ -48,6 +48,17 @@ public class IfSwitchTest {
 		System.out.println("SWITCH문으로 실행한 grade는 " + grade2 + "이다.");
 		System.out.println(score2 + "  " + grade2);
 		
+		// break문을 사용하는 switch문 실행해보기
+		int a = 12; int b = 2;
+		int answer = 0;
+		char op = '+';
 		
+		switch(op) {
+		case '+': answer = a + b; break;
+		case '-': answer = a - b; break;
+		case '*': answer = a * b; break;
+		case '/': answer = a / b; break;
+		}
+		System.out.println("break문을 사용하는 switch문에서의 answer는 " + answer + "이다.");
 	}
 }
