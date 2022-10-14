@@ -11,9 +11,11 @@ public class SwitchTest {
 		
 		Scanner sc = new Scanner(System.in);
 		System.out.println(" +, -, *, / 중 하나의 연산자를 입력하세요 : ");
-		op = sc.next();
+		String op = sc.next();
 		
-		
+		switch(op) {
+		case
+		}
 		
 	}
 
