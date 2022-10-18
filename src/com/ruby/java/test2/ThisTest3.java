@@ -40,5 +40,10 @@ public class ThisTest3 {
 		System.out.println("성적 평균은 : " + avg);
 		System.out.println("최고 성적은 : " + max);
 		System.out.println("최저 성적은 : " + min);
+		
+		// 명령행 매개변수 이용하기
+		for(int i=0; i<args.length; i++) {
+			System.out.println(args[i]);
+		}
 	}
 }
