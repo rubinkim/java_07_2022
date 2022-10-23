@@ -1,4 +1,3 @@
-```java
 package bigData.infoProcess.rubin.2022_10;
 
 class Test_102322_01{
@@ -7,5 +6,3 @@ class Test_102322_01{
         System.out.println("I acquired InfoProcessing Expert License.")
     }
 }
-```
-
