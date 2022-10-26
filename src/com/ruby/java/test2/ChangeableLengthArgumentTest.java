@@ -14,7 +14,7 @@ public class ChangeableLengthArgumentTest {
 	
 	// 가변길이 인자를 전달받는 매개변수와 더불어서 일반인자도 전달받는 복합선언인 경우
 	static void test2(String name, int ... v) {
-		System.out.print("첫번째 전달받은 인자는 " + name + "이고.");
+		System.out.print("첫번째 전달받은 인자는 " + name + "이고 ");
 		System.out.print("두번째 전달받은 인자는 ");
 		for(int x : v) {
 			System.out.print(x + " ");
