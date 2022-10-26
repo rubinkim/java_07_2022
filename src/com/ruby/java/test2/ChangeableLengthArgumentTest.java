@@ -12,6 +12,9 @@ public class ChangeableLengthArgumentTest {
 		System.out.println();
 	}
 	
+	// 가변길이 인자를 전달받는 매개변수와 더불어서 일반인자도 전달받는 복합선언인 경우
+	static void 
+	
 	public static void main(String[] args) {
 		test1(1);
 		test1(1,2);
