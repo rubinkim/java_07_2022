@@ -1,6 +1,6 @@
 package com.ruby.java.ch07.inheritance;
 
-public class ProfessorNew {
+public class ProfessorNew extends PersonNew {
 	private String subject;
 	
 	public String getSubject() {
