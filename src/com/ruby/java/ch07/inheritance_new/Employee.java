@@ -9,4 +9,8 @@ public class Employee extends Person {
 	public void setDept(String dept) {
 		this.dept = dept;
 	}
+	
+	public String toString() {
+		return getName() + " : " + getAge() + " ==> " + dept;
+	}
 }
