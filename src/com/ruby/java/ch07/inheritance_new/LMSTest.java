@@ -5,6 +5,7 @@ public class LMSTest {
 	public static void main(String[] args) {
 		Employee e = new Employee();
 		Professor p = new Professor();
+		Student s = new Student();
 		
 		e.setName("±èÇÑ¿ë");
 		e.setAge(64);
@@ -14,7 +15,12 @@ public class LMSTest {
 		p.setAge(45);
 		p.setSubject("°ø¿¹");
 		
+		s.setName("±è±â¿ø");
+		s.setAge(44);
+		s.setMajor("Á¶¼Ò");
+		
 		System.out.println(e.toString());
 		System.out.println(p.toString());
+		System.out.println(s.toString());
 	}
 }
