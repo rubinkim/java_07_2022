@@ -7,6 +7,13 @@ public class Professor extends Person {
 		System.out.println("Professor 클래스의 defalut constructor");
 	}
 	
+	public Professor(String name, int age, String subject) {
+		System.out.println("Professor클래스의 추가 생성자");
+		super.setName(name);
+		super.setAge(age);
+		this.subject = subject;
+	}
+	
 	public String getSubject() {
 		return subject;
 	}

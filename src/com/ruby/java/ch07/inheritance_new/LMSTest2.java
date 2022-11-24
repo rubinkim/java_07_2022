@@ -6,10 +6,8 @@ public class LMSTest2 {
 		Employee e = new Employee("김유빈", 22, "computer science");
 		System.out.println(e.toString());
 		
-		Professor p = new Professor();
-		p.setName("고희진");
-		p.setAge(38);
-		p.setSubject("Volley Ball");
+		Professor p = new Professor("니아 리드", 23, "페퍼저축은행");
+
 		System.out.println(p.toString());
 		
 		Student s = new Student();
