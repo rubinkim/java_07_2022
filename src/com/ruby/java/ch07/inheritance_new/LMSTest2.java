@@ -10,10 +10,7 @@ public class LMSTest2 {
 
 		System.out.println(p.toString());
 		
-		Student s = new Student();
-		s.setName("±Ë«œ∞Ê");
-		s.setAge(27);
-		s.setMajor("Setter");
+		Student s = new Student("Sopranos", 2002, "HBO");
 		System.out.println(s.toString());
 	}
 
