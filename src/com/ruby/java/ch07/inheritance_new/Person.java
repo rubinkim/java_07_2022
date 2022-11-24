@@ -4,6 +4,11 @@ public class Person {
 	private String name;
 	private int age;
 	
+	/* Person() 持失切 */
+	public Person() {
+		System.out.println("Person 持失切 叔薄!");
+	}
+	
 	public String getName() {
 		return name;
 	}
