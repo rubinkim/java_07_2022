@@ -4,8 +4,10 @@ public class LMSTest {
 
 	public static void main(String[] args) {
 		
-		Employee e = new Employee("천지영", 45, "공예");
-		
+		Employee e = new Employee("천지영", 45, "공예");		
 		System.out.println(e.toString());
+		
+		Professor p = new Professor("김기원", 44, "발레");
+		System.out.println(p.toString());
 	}
 }
