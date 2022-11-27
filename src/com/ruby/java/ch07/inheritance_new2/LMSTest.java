@@ -9,5 +9,8 @@ public class LMSTest {
 		
 		Professor p = new Professor("김기원", 44, "발레");
 		System.out.println(p.toString());
+		
+		Student s = new Student("전다정", 31, "경제학");
+		System.out.println(s.toString());
 	}
 }
