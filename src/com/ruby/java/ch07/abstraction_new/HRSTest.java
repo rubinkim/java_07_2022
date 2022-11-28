@@ -7,9 +7,11 @@ public class HRSTest {
 		Salesman s = new Salesman();
 		Consultant c = new Consultant();
 		Manager m = new Manager();
+		Director d = new Director();
 		
 		s.calcSalary();
 		c.calcSalary();
 		m.calcSalary();
+		d.calcSalary();
 	}
 }
