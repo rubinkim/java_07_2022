@@ -5,7 +5,10 @@ public class HRSTest {
 	public static void main(String[] args) {
 		
 		Salesman s = new Salesman();
+		Consultant c = new Consultant();
+		
 		s.calcSalary();
+		c.calcSalary();
 		
 	}
 
