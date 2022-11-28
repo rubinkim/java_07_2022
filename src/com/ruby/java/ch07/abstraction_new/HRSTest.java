@@ -6,10 +6,10 @@ public class HRSTest {
 		
 		Salesman s = new Salesman();
 		Consultant c = new Consultant();
+		Manager m = new Manager();
 		
 		s.calcSalary();
 		c.calcSalary();
-		
+		m.calcSalary();
 	}
-
 }
