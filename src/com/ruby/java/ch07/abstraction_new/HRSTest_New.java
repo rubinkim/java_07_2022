@@ -32,19 +32,28 @@ abstract class Manager1 extends Employee1{
 	}
 }
 
+class Director1 extends Manager1{
+	public void calcBonus() {
+		System.out.println("Director 보너스 = 기본급 * 12 * 6");
+	}
+}
+
 public class HRSTest_New {
 
 	public static void main(String[] args) {
 		
 		Salesman1 s = new Salesman1();
 		Consultant1 c = new Consultant1();
-		
+		Director1 d = new Director1();
+			
 		s.calcSalary();
 		s.calcBonus();
 		System.out.println();
 		c.calcSalary();
 		c.calcBonus();
 		System.out.println();
+		d.calcSalary();
+		d.calcBonus();
 	}
 
 }
