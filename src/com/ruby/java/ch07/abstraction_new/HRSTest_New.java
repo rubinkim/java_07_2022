@@ -17,7 +17,7 @@ class Salesman1 extends Employee1{
 	}
 }
 
-class Consultant extends Employee{
+class Consultant1 extends Employee1{
 	public void calcSalary() {
 		System.out.println("Consultant 급여 = 기본급 + 컨설팅 특별 수당");
 	}
@@ -31,8 +31,14 @@ public class HRSTest_New {
 	public static void main(String[] args) {
 		
 		Salesman1 s = new Salesman1();
+		Consultant1 c = new Consultant1();
 		
 		s.calcSalary();
+		s.calcBonus();
+		System.out.println();
+		c.calcSalary();
+		c.calcBonus();
+		System.out.println();
 	}
 
 }
