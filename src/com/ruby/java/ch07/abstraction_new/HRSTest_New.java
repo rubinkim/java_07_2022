@@ -27,12 +27,14 @@ class Consultant1 extends Employee1{
 }
 
 abstract class Manager1 extends Employee1{
-	public void calcSalary() {
-		System.out.println("Manager 급여 = 기본급 + 팀 특별 수당");
-	}
+	public abstract void calcSalary();
+	public abstract void calcBonus();
 }
 
 class Director1 extends Manager1{
+	public void calcSalary() {
+		System.out.println("Director 급여 = 기본급 + 팀 특별한 수당");
+	}
 	public void calcBonus() {
 		System.out.println("Director 보너스 = 기본급 * 12 * 6");
 	}
