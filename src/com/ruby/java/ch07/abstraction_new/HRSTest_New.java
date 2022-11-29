@@ -26,6 +26,12 @@ class Consultant1 extends Employee1{
 	}
 }
 
+abstract class Manager1 extends Employee1{
+	public void calcSalary() {
+		System.out.println("Manager 급여 = 기본급 + 팀 특별 수당");
+	}
+}
+
 public class HRSTest_New {
 
 	public static void main(String[] args) {
