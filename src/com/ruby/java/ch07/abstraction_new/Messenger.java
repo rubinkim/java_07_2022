@@ -8,6 +8,19 @@ public interface Messenger {
 	public abstract String getMessage();
 	public abstract void setMessage(String msg);
 	
+	public static void log() {
+		System.out.println("start job!");
+	}
+	
+	public default void setLogin(boolean login) {
+		log();
+		if(login) {
+			System.out.println("로그인 처리");
+		}else {
+			System.out.println("로그아웃 처리");
+		}
+	}
+	
 	
 	
 }
