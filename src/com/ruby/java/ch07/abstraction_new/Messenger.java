@@ -8,10 +8,6 @@ public interface Messenger {
 	public abstract String getMessage();
 	public abstract void setMessage(String msg);
 	
-	public static void log() {
-		System.out.println("start job!");
-	}
-	
 	public default void setLogin(boolean login) {
 		log();
 		if(login) {
@@ -21,6 +17,12 @@ public interface Messenger {
 		}
 	}
 	
+	public static void getConnection() {
+		System.out.println("network¿¡ ¿¬°á");
+	}
 	
+	public static void log() {
+		System.out.println("start job!");
+	}
 	
 }
