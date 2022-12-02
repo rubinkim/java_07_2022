@@ -20,7 +20,6 @@ public interface Messenger {
 	public static void getConnection() {
 		System.out.println("network에 연결합니다.");
 	}
-	
 
 	}
 
