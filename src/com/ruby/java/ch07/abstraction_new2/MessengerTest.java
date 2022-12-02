@@ -14,5 +14,7 @@ public class MessengerTest {
 		
 		GalaxyMessenger galaxy = new GalaxyMessenger();
 		System.out.println(galaxy.getMessage());
+		galaxy.setMessage("adios");
+		galaxy.changeKeyboard();
 	}
 }
