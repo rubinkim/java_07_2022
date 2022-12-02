@@ -10,5 +10,9 @@ public class MessengerTest {
 		
 		System.out.println(iphone.getMessage());
 		iphone.clearMessage();
+		iphone.setMessage("bueno");
+		
+		GalaxyMessenger galaxy = new GalaxyMessenger();
+		System.out.println(galaxy.getMessage());
 	}
 }
