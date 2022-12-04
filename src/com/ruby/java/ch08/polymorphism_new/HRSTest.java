@@ -9,7 +9,7 @@ public class HRSTest {
 		public abstract void calcBonus();
 	}
 	
-	class Salesman{
+	class Salesman extends Employee {
 		public void calcSalary() {
 			System.out.println("Salesman급여 = 기본급 + 판매수당");
 		}
