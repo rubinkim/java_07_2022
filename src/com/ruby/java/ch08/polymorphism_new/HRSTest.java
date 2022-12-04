@@ -43,7 +43,15 @@ public class HRSTest{
 		System.out.println(e + "의 소득세를 계산한다.");
 	}
 	
-	
+	public static void main(String[] agrs) {
+		Salesman s = new Salesman();
+		Consultant c = new Consultant();
+		Director d = new Director();
+		
+		calcTax(s);
+		calcTax(c);
+		calcTax(d);
+	}
 }
 	
 
