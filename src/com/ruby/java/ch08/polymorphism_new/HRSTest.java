@@ -38,7 +38,10 @@ class Director extends Manager{
 }
 	
 public class HRSTest{
-	
+
+	// 프로그램을 시행하면 main()메서드가 실행되는데 이안에 아직 실행되지 않은 메서드가 
+	// 있다면 당연히 오류가 발생할 것이기 때문에 프로그램 시작시 main()메서드보다 먼저
+	// 메모리의 code영역에 생성되도록 static으로 선언해줘야 하는 것이다!!!
 	public static void calcTax(Employee e) {
 		System.out.println(e + "의 소득세를 계산한다.");
 	}
