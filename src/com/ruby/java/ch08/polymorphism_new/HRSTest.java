@@ -26,8 +26,25 @@ public class HRSTest {
 			System.out.println("Consultant보너스 = 기본급 * 12 *6");
 		}
 	}
-
+	
+	abstract class Manager extends Employee{
+		public void calcSalary() {
+			System.out.println("Manager급여 = 기본급 + 팀성과수당");
+		}
+	}
+	
+	class Director extends Manager{
+		public void calcBonus() {
+			System.out.println("Director보너스 = 기본급 * 12 * 12");
+		}
+	}
+	
+	public static void calcTax(Employee e) {
+		System.out.println(e + "의 소득세을 계산한다.");
+	}
+	
 	public static void main(String[] args) {
+
 		
 	}
 
