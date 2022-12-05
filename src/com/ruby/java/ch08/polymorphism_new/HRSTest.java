@@ -6,7 +6,7 @@ abstract class Employee extends Object{
 	public abstract void calcSalary();
 	public abstract void calcBonus();
 	
-	public String toString() {
+	public String toString_new() {
 		return "instance의 주소값은 " + super.toString() + "이다.";
 	}
 }
@@ -61,8 +61,8 @@ public class HRSTest{
 		
 		System.out.println();
 		
-		System.out.println(s.toString());
-		System.out.println(c.toString());
+		System.out.println(s.toString_new());
+		System.out.println(c.toString_new());
 		System.out.println(d.toString());
 		System.out.println();
 		
