@@ -1,10 +1,14 @@
 package com.ruby.java.ch08.polymorphism_new;
 
-abstract class Employee{
+abstract class Employee extends Object{
 	String name;
 	int salary;
 	public abstract void calcSalary();
 	public abstract void calcBonus();
+	
+	public String toString() {
+		return "주소값은 " + super.toString() + "이다.";
+	}
 }
 	
 class Salesman extends Employee{
