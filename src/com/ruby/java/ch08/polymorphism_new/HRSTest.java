@@ -6,9 +6,7 @@ abstract class Employee extends Object{
 	public abstract void calcSalary();
 	public abstract void calcBonus();
 	
-	public String toString() {
-		return  "instance의 주소값은 " + super.toString() + "이다.";
-	}
+
 }
 	
 class Salesman extends Employee{
@@ -17,6 +15,10 @@ class Salesman extends Employee{
 	}
 	public void calcBonus() {
 		System.out.println("Salesman보너스 = 기본급 * 12 * 4");
+	}
+	
+	public String toString() {
+		return "의 주소값은 " + super.toString() + "이다.";
 	}
 }
 	
