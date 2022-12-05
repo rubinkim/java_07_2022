@@ -7,7 +7,7 @@ abstract class Employee extends Object{
 	public abstract void calcBonus();
 	
 	public String toString() {
-		return "주소값은 " + super.toString() + "이다.";
+		return  "instance의 주소값은 " + super.toString() + "이다.";
 	}
 }
 	
