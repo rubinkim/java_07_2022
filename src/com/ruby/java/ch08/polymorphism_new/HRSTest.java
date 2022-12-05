@@ -1,17 +1,35 @@
 package com.ruby.java.ch08.polymorphism_new;
 
 abstract class Employee extends Object{
+	
+	public Employee() {
+		
+	}
+	
+	public Employee(String name) {
+		this.name = name;
+	}
+	
 	String name;
 	int salary;
 	public abstract void calcSalary();
 	public abstract void calcBonus();
 	
 	public String toString_new() {
-		return "instance의 주소값은 " + super.toString() + "이다.";
+		return this.name + "의 주소값은 " + this.toString() + "이다.";
 	}
 }
 	
 class Salesman extends Employee{
+	
+	public Salesman() {
+		
+	}
+	
+	public Salesman(String name) {
+		super(name);
+	}
+	
 	public void calcSalary() {
 		System.out.println("Salesman급여 = 기본급 + 판매수당");
 	}
@@ -21,6 +39,15 @@ class Salesman extends Employee{
 }
 	
 class Consultant extends Employee{
+	
+	public Consultant() {
+		
+	}
+	
+	public Consultant(String name) {
+		this.name = name;
+	}
+	
 	public void calcSalary() {
 		System.out.println("Consultant급여 = 기본급 + 컨설팅 특별수당");
 	}
@@ -36,6 +63,15 @@ abstract class Manager extends Employee{
 }
 	
 class Director extends Manager{
+	
+	public Director() {
+		
+	}
+	
+	public Director(String name) {
+		this.name = name;
+	}
+	
 	public void calcBonus() {
 		System.out.println("Director보너스 = 기본급 * 12 * 12");
 	}
@@ -51,9 +87,9 @@ public class HRSTest{
 	}
 	
 	public static void main(String[] agrs) {
-		Salesman s = new Salesman();
-		Consultant c = new Consultant();
-		Director d = new Director();
+		Salesman s = new Salesman("s");
+		Consultant c = new Consultant("c");
+		Director d = new Director("d");
 		
 		calcTax(s);
 		calcTax(c);
@@ -63,7 +99,7 @@ public class HRSTest{
 		
 		System.out.println(s.toString_new());
 		System.out.println(c.toString_new());
-		System.out.println(d.toString());
+		System.out.println(d.toString_new());
 		System.out.println();
 		
 		Salesman s2 = s;
