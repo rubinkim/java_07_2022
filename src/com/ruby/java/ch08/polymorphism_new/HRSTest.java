@@ -54,6 +54,12 @@ public class HRSTest{
 		calcTax(s);
 		calcTax(c);
 		calcTax(d);
+		
+		System.out.println();
+		
+		System.out.println(s.toString());
+		System.out.println(c.toString());
+		System.out.println(d.toString());
 	}
 }
 	
