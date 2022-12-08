@@ -118,6 +118,9 @@ public class HRSTest{
 		Manager  dd1 = new Director();
 		Employee dd2 = new Director();
 		Object   dd3 = new Director();
+		
+		Object arr[] = new Object[] {ss1,ss2,ss3,dd0,dd1,dd2,dd3};
+		
 	}
 }
 	
