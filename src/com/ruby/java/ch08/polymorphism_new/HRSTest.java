@@ -110,14 +110,14 @@ public class HRSTest{
 		}
 		System.out.println();
 		
-		Salesman ss1 = new Salesman();
-		Employee ss2 = new Salesman();
-		Object   ss3 = new Salesman();
+		Salesman ss1 = new Salesman("ss1");
+		Employee ss2 = new Salesman("ss2");
+		Object   ss3 = new Salesman("ss3");
 		
-		Director dd0 = new Director();
-		Manager  dd1 = new Director();
-		Employee dd2 = new Director();
-		Object   dd3 = new Director();
+		Director dd0 = new Director("dd0");
+		Manager  dd1 = new Director("dd1");
+		Employee dd2 = new Director("dd2");
+		Object   dd3 = new Director("dd3");
 		
 		Object arr[] = new Object[] {ss1,ss2,ss3,dd0,dd1,dd2,dd3};
 		
