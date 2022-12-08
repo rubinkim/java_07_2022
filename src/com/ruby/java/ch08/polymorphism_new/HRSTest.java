@@ -121,6 +121,11 @@ public class HRSTest{
 		
 		Object arr[] = new Object[] {ss1,ss2,ss3,dd0,dd1,dd2,dd3};
 		
+		System.out.println(arr[0]);
+		System.out.println(ss1);
+		System.out.println(ss1.name);
+		System.out.println();
+		
 		for(int i=0; i<arr.length; i++) {
 			System.out.println(arr[i]);
 		}
