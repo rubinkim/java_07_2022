@@ -108,6 +108,16 @@ public class HRSTest{
 		if(s.equals(s2)) {System.out.println("둘다 같은 객체이다.");}
 		else {System.out.println("서로 다른 객체이다.");
 		}
+		System.out.println();
+		
+		Salesman ss1 = new Salesman();
+		Employee ss2 = new Salesman();
+		Object   ss3 = new Salesman();
+		
+		Director dd0 = new Director();
+		Manager  dd1 = new Director();
+		Employee dd2 = new Director();
+		Object   dd3 = new Director();
 	}
 }
 	
