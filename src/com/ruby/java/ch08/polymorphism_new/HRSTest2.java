@@ -108,6 +108,8 @@ public class HRSTest2 {
 			Consultant_new c = (Consultant_new) e;
 			c.num_project = 35;
 			System.out.println("Consutant입니다." + c.num_project);
+		} else {
+			System.out.println("Employee입니다.");
 		}
 	}
 	
