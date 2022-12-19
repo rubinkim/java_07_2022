@@ -20,6 +20,23 @@ abstract class Employee extends Object{
 	}
 }
 
+class Salesman extends Employee{
+	// constructor 생성
+	public Salesman() {
+	}
+	public Salesman(String name) {
+		super(name);
+	}
+	
+	// 추상메서드 구현하기
+	public void calcSalary() {
+		System.out.println("Salesman급여 = 기본급 + 판매수당");
+	}
+	public void calcBonus() {
+		System.out.println("Salesman보너스 = 기본급 * 12 * 4");
+	}
+}
+
 public class HRSTest2 {
 
 	public static void main(String[] args) {
