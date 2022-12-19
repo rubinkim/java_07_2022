@@ -37,6 +37,23 @@ class Salesman extends Employee{
 	}
 }
 
+class Consultant extends Employee{
+	// constructor 생성
+	public Consultant() {
+	}
+	public Consultant(String name) {
+		this.name = name;
+	}
+	
+	// 추상메서드 구현하기
+	public void calcSalary() {
+		System.out.println("Consultant급여 = 기본급 + 컨설팅 특별수당");
+	}
+	public void calcBonus() {
+		System.out.println("Consultant보너스 = 기본급 * 12 * 6 ");
+	}
+}
+
 public class HRSTest2 {
 
 	public static void main(String[] args) {
